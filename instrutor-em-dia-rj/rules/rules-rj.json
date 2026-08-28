@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "rulesetId": "br-rj-autonomous-driving-instructor",
+  "rulesetRevision": 1,
+  "rulesetVersion": "2026.08.28",
+  "jurisdiction": {"country": "BR", "state": "RJ"},
+  "effectiveAsOf": "2026-08-21",
+  "lastVerifiedAt": "2026-08-28",
+  "requirements": [
+    {"id":"cnh_ear","title":"CNH válida + EAR","shortDescription":"CNH válida e compatível com a categoria almejada, com EAR.","requiredness":"REQUIRED","supportsExpiryDate":true,"displayOrder":1,"sourceIds":["detran_rj_notice_2026_08_21","contran_1020_2025"]},
+    {"id":"instructor_certificate","title":"Certificado de Instrutor","shortDescription":"Certificado de conclusão do curso de instrutor de trânsito.","requiredness":"REQUIRED","supportsExpiryDate":true,"displayOrder":2,"sourceIds":["detran_rj_notice_2026_08_21","contran_1020_2025","lei_12302_2010"]},
+    {"id":"education","title":"Escolaridade","shortDescription":"Certificado de escolaridade.","requiredness":"REQUIRED","supportsExpiryDate":false,"displayOrder":3,"sourceIds":["detran_rj_notice_2026_08_21","lei_12302_2010"]},
+    {"id":"residence","title":"Comprovante de residência","requiredness":"REQUIRED","supportsExpiryDate":false,"displayOrder":4,"sourceIds":["detran_rj_notice_2026_08_21"]},
+    {"id":"background_check","title":"Certidão de antecedentes","shortDescription":"Certidão negativa de antecedentes criminais vigente.","requiredness":"REQUIRED","supportsExpiryDate":true,"displayOrder":5,"sourceIds":["detran_rj_notice_2026_08_21","contran_1020_2025"]},
+    {"id":"cpf","title":"CPF","requiredness":"REQUIRED","supportsExpiryDate":false,"displayOrder":6,"sourceIds":["detran_rj_notice_2026_08_21"]},
+    {"id":"fee_receipt","title":"Comprovante da taxa","requiredness":"REQUIRED","supportsExpiryDate":false,"displayOrder":7,"sourceIds":["detran_rj_notice_2026_08_21"]},
+    {"id":"ccmei","title":"CCMEI","shortDescription":"Documento aplicável quando o pedido é apresentado como MEI.","requiredness":"CONDITIONAL","allowsNotApplicable":true,"supportsExpiryDate":false,"displayOrder":8,"sourceIds":["detran_rj_notice_2026_08_21"],"condition":"Aplicável quando o pedido é apresentado como MEI"},
+    {"id":"power_of_attorney","title":"Procuração","shortDescription":"Instrumento público quando houver representação por procurador.","requiredness":"CONDITIONAL","allowsNotApplicable":true,"supportsExpiryDate":false,"displayOrder":9,"sourceIds":["detran_rj_notice_2026_08_21"],"condition":"Aplicável quando houver representação por procurador"}
+  ],
+  "process": {"stages":[
+    {"stage":"PREPARING","sourceIds":["detran_rj_cadastro_instrutor"]},
+    {"stage":"DOCUMENTS_SENT","sourceIds":["detran_rj_cadastro_instrutor","detran_rj_notice_2026_08_21"]},
+    {"stage":"PROCESS_OPENED","sourceIds":["detran_rj_cadastro_instrutor"]},
+    {"stage":"UNDER_REVIEW","sourceIds":["detran_rj_cadastro_instrutor","detran_rj_notice_2026_08_21"]},
+    {"stage":"PENDING_ACTION","sourceIds":["detran_rj_cadastro_instrutor","detran_rj_notice_2026_08_21"]},
+    {"stage":"REANALYSIS","sourceIds":["detran_rj_cadastro_instrutor"]},
+    {"stage":"AUTHORIZED","sourceIds":["detran_rj_cadastro_instrutor","detran_rj_notice_2026_08_21"]}
+  ]},
+  "pendingGuidance": {"summary":"Acompanhe o SEI-RJ e reúna os arquivos solicitados quando uma exigência aparecer.","steps":["Consulte regularmente o andamento do processo no SEI-RJ.","Reúna os arquivos solicitados na pendência.","Envie as pendências pelo canal indicado na orientação oficial vigente.","Aguarde a reanálise e continue acompanhando a publicação oficial."],"contactEmail":"srae.credencial@detran.rj.gov.br","contactSubject":"PENDÊNCIA INSTRUTOR AUTÔNOMO","sourceIds":["detran_rj_cadastro_instrutor","detran_rj_notice_2026_08_21"]},
+  "sources": [
+    {"id":"detran_rj_cadastro_instrutor","title":"Orientações para Cadastro","authority":"DETRAN-RJ","jurisdiction":"RJ","documentType":"OFFICIAL_GUIDANCE","lastVerifiedAt":"2026-08-28","officialUrl":"https://www.detran.rj.gov.br/menu/menu-habilitacao/orientacoes-para-cadastro.html","status":"ACTIVE","relatedReferences":["Portaria DETRAN-RJ nº 7.082/2026"]},
+    {"id":"detran_rj_notice_2026_08_21","title":"Detran RJ orienta instrutores autônomos a acompanharem processos de credenciamento pelo SEI-RJ","authority":"DETRAN-RJ","jurisdiction":"RJ","documentType":"NEWS","publicationDate":"2026-08-21","lastVerifiedAt":"2026-08-28","officialUrl":"https://www.detran.rj.gov.br/noticias/detran-rj-orienta-instrutores-autonomos-a-acompanharem-processos-de-credenciamento-pelo-sei-rj.html","status":"SUPPORTING"},
+    {"id":"contran_1020_2025","title":"Resolução CONTRAN nº 1.020/2025","authority":"CONTRAN / Ministério dos Transportes","jurisdiction":"BR","documentType":"RESOLUTION","referenceNumber":"1.020/2025","publicationDate":"2025-12-01","lastVerifiedAt":"2026-08-28","officialUrl":"https://www.gov.br/transportes/pt-br/assuntos/transito/conteudo-contran/resolucoes/Resolucao10202025.pdf","status":"ACTIVE"},
+    {"id":"lei_12302_2010","title":"Lei nº 12.302/2010","authority":"Presidência da República","jurisdiction":"BR","documentType":"LAW","referenceNumber":"12.302/2010","publicationDate":"2010-08-02","lastVerifiedAt":"2026-08-28","officialUrl":"https://www.planalto.gov.br/ccivil_03/_ato2007-2010/2010/lei/l12302.htm","status":"ACTIVE"}
+  ]
+}
