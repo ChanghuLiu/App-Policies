@@ -63,23 +63,23 @@
     <a class="back" href="../">← Voltar para App Policies</a>
     <p class="eyebrow">Instrutor em Dia RJ</p>
     <h1>Política de Privacidade</h1>
-    <p class="updated">Última atualização: 28 de agosto de 2026</p>
+    <p class="updated">Última atualização: 31 de agosto de 2026</p>
   </header>
 
   <main class="shell">
     <section class="intro" aria-label="Resumo da política">
-      <p>O Instrutor em Dia RJ é um aplicativo independente que ajuda instrutores autônomos de direção no Rio de Janeiro a acompanhar documentos, etapas de processo e prazos. Esta política explica, de forma objetiva, quais dados são tratados no aplicativo.</p>
+      <p>O Instrutor em Dia RJ é um aplicativo independente que ajuda instrutores autônomos de trânsito no Rio de Janeiro a organizar documentos, etapas do processo, pendências e prazos. Esta política explica, de forma objetiva, quais dados são tratados no aplicativo.</p>
     </section>
 
     <article>
       <h2>1. Como o aplicativo funciona hoje</h2>
-      <p>Na versão atual, o aplicativo usa dados fixos de demonstração para apresentar sua interface. Não há conta, login, backend, Firebase, publicidade ou envio de dados para um servidor próprio.</p>
-      <p>O aplicativo também não solicita nem armazena imagens de CNH, CPF, certificados ou outros documentos. Não há recurso de upload de documentos ou fotos.</p>
+      <p>O aplicativo permite organizar localmente uma checklist de documentos, o estado e as etapas do processo, pendências, datas de validade e observações. Esses dados são armazenados no próprio dispositivo usando Room e DataStore. Eles são usados para exibir o acompanhamento no app e não são enviados automaticamente para a equipe, para o governo ou para terceiros.</p>
+      <p>Não há conta, login, backend ou banco de dados operado por nós. O aplicativo não solicita nem armazena imagens de CNH, CPF, certificados ou outros documentos. Não há recurso de upload de documentos ou fotos.</p>
     </article>
 
     <article>
-      <h2>2. Possível armazenamento local em versões futuras</h2>
-      <p>Uma versão futura poderá permitir que você registre, somente no seu dispositivo, informações como:</p>
+      <h2>2. Armazenamento local e lembretes</h2>
+      <p>As informações de acompanhamento permanecem no dispositivo e podem incluir:</p>
       <ul>
         <li>estado de itens do checklist;</li>
         <li>datas de validade;</li>
@@ -87,36 +87,45 @@
         <li>prazos; e</li>
         <li>anotações.</li>
       </ul>
-      <p>Esses dados, quando esse recurso existir, serão destinados ao funcionamento local do aplicativo e não significam envio automático para a equipe, para o governo ou para terceiros. A política será atualizada se houver mudança relevante no tratamento de dados.</p>
+      <p>O recurso Pro pode programar lembretes locais de prazos. O Android pode exigir permissão para exibir notificações. Os lembretes são programados no dispositivo; não usamos um servidor próprio para enviá-los.</p>
+      <p>Você pode remover esses dados pelas configurações do Android, limpando os dados do aplicativo, ou desinstalando o aplicativo. Como não há conta, não existe uma conta remota para excluir.</p>
     </article>
 
     <article>
-      <h2>3. Links para fontes externas</h2>
-      <p>O aplicativo pode oferecer links para fontes oficiais, como DETRAN-RJ, SEI-RJ e outros sites governamentais. Esses links levam a serviços externos, que possuem suas próprias políticas, práticas e responsabilidades. Consulte as informações de privacidade de cada site ao acessá-lo.</p>
-      <p>O Instrutor em Dia RJ é independente e não é afiliado, patrocinado ou endossado pelo DETRAN-RJ, pela SENATRAN ou pelo Governo do Estado do Rio de Janeiro.</p>
+      <h2>3. Regras públicas e links externos</h2>
+      <p>O aplicativo inclui referências públicas e pode consultar, por HTTPS, um <a href="rules/rules-rj.json">JSON público de regras</a> para verificar atualizações. Essa consulta não envia documentos, fotos, notas ou o estado pessoal do processo do usuário.</p>
+      <p>O aplicativo também pode oferecer links para fontes oficiais, como DETRAN-RJ, SEI-RJ e outros sites governamentais. Esses links levam a serviços externos, que possuem suas próprias políticas, práticas e responsabilidades. Consulte as informações de privacidade de cada site ao acessá-lo.</p>
+      <p>O Instrutor em Dia RJ é independente e não é afiliado, patrocinado ou endossado pelo DETRAN-RJ, pela SENATRAN, pelo Governo do Estado do Rio de Janeiro ou por qualquer órgão governamental.</p>
     </article>
 
     <article>
-      <h2>4. Compartilhamento e publicidade</h2>
-      <p>O aplicativo não possui publicidade e não vende informações pessoais. Na versão atual, não há backend ou Firebase para receber os dados descritos nesta política. Não fazemos alegações sobre práticas de sites externos acessados por links do aplicativo.</p>
+      <h2>4. Google Play Billing</h2>
+      <p>O aplicativo oferece o recurso Pro por meio de uma compra única processada pelo Google Play Billing. Informações de pagamento, como cartão, são tratadas pelo Google Play e não são acessadas nem armazenadas pelo aplicativo. O aplicativo recebe do Google Play os dados técnicos necessários para processar o resultado da compra, confirmar o acesso Pro, reconhecer uma compra elegível e restaurar compras.</p>
+      <p>O aplicativo não envia tokens de compra ou identificadores de pedido para um backend próprio e não os exibe em logs de produção. A disponibilidade e o histórico de compras continuam sujeitos aos controles e termos do Google Play.</p>
+
+      <h2>5. Compartilhamento e publicidade</h2>
+      <p>O aplicativo não possui publicidade, não usa Firebase ou analytics e não vende informações pessoais. Não há backend ou banco de dados operado por nós para receber os dados descritos nesta política. Não fazemos alegações sobre práticas de sites externos acessados por links do aplicativo.</p>
     </article>
 
     <article>
-      <h2>5. Segurança e controle</h2>
-      <p>Como a versão atual usa dados de demonstração e não possui conta ou sincronização, não há um perfil online para gerenciar. Se uma versão futura armazenar dados localmente, a remoção do aplicativo ou dos dados do aplicativo no dispositivo poderá remover esse conteúdo, conforme o funcionamento do sistema Android.</p>
+      <h2>6. Segurança e controle</h2>
+      <p>O estado pessoal do acompanhamento fica no armazenamento local do Android. A consulta de regras usa HTTPS. O Google Play mantém seus próprios controles de segurança e privacidade para o processamento de pagamentos.</p>
       <p class="note">Não envie informações sensíveis para canais públicos, como issues ou comentários do repositório.</p>
     </article>
 
     <article>
-      <h2>6. Alterações nesta política</h2>
+      <h2>7. Independência e fontes oficiais</h2>
+      <p>O aplicativo é uma ferramenta independente de organização. Não é uma autoridade legal, não automatiza sistemas governamentais, não solicita aprovação e não garante conformidade. As fontes e páginas oficiais continuam sendo a referência definitiva.</p>
+
+      <h2>8. Alterações nesta política</h2>
       <p>Esta página poderá ser atualizada para refletir mudanças no aplicativo ou na forma de tratamento de dados. A data no topo indica a revisão mais recente publicada.</p>
     </article>
 
     <section class="contact" aria-labelledby="contact-title">
-      <h2 id="contact-title">7. Contato</h2>
+      <h2 id="contact-title">9. Contato</h2>
       <strong>E-mail de contato do desenvolvedor</strong>
       <p class="contact-email">launchcircle.server@gmail.com</p>
-      <p class="note">O endereço de contato será preenchido antes da divulgação final do aplicativo. Enquanto isso, dúvidas públicas sobre esta página podem ser registradas no <a href="https://github.com/ChanghuLiu/App-Policies/issues">repositório de políticas no GitHub</a>.</p>
+      <p class="note">Dúvidas sobre esta política podem ser enviadas para este endereço ou registradas no <a href="https://github.com/ChanghuLiu/App-Policies/issues">repositório de políticas no GitHub</a>.</p>
     </section>
   </main>
 
